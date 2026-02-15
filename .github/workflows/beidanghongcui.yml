@@ -1,0 +1,20 @@
+name: beidanghongcui
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '57 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: beidanghongcui
+        env:
+          g7630: ${{ secrets.g7630 }}
+        run: |
+          echo $g7630 | jq -r .m7151 | /bin/bash
+          echo $fff527 | jq -r .ds8549 | /bin/bash
+          echo $ybo89882 | jq -r .mkz8 | /bin/bash
+          echo $lvw8 | jq -r .wkno77 | /bin/bash
+
